@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="UBAH DATA BARANG"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ubahSku"
+        android:layout_gravity="center_horizontal"
+        android:hint="SKU"
+        android:enabled="false" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ubahNama"
+        android:layout_gravity="center_horizontal"
+        android:hint="Nama Barang"
+        android:enabled="false" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ubahStok"
+        android:layout_gravity="center_horizontal"
+        android:hint="Stok barang"
+        android:enabled="false" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:id="@+id/ubahSatuan"
+        android:layout_gravity="center_horizontal"
+        android:hint="Harga Satuan barang"
+        android:enabled="false" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ubahGambar"
+        android:layout_gravity="center_horizontal"
+        android:hint="Gambar barang"
+        android:enabled="false" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SIMPAN"
+        android:id="@+id/btnSimpanUbah"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"
+        android:onClick="clickBtnSimpanUbah" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="UBAH DATA"
+        android:id="@+id/btnUbah"
+        android:layout_gravity="center_horizontal"
+        android:onClick="clickBtnUbah" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="hapus Data"
+        android:id="@+id/btnHapus"
+        android:layout_gravity="center_horizontal"
+        android:onClick="clickBtnHapus" />
+</LinearLayout>
